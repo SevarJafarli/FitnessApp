@@ -9,23 +9,97 @@
 /* Begin PBXBuildFile section */
 		E70FCEAF2BC7DE600014950B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEAE2BC7DE600014950B /* AppDelegate.swift */; };
 		E70FCEB12BC7DE600014950B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEB02BC7DE600014950B /* SceneDelegate.swift */; };
-		E70FCEB32BC7DE600014950B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEB22BC7DE600014950B /* ViewController.swift */; };
 		E70FCEB62BC7DE600014950B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70FCEB42BC7DE600014950B /* Main.storyboard */; };
 		E70FCEB92BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEB72BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld */; };
 		E70FCEBB2BC7DE610014950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70FCEBA2BC7DE610014950B /* Assets.xcassets */; };
 		E70FCEBE2BC7DE610014950B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70FCEBC2BC7DE610014950B /* LaunchScreen.storyboard */; };
+		E70FCEC92BC7E00B0014950B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEC82BC7E00B0014950B /* TabBarViewController.swift */; };
+		E70FCECB2BC7E1A40014950B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCECA2BC7E1A40014950B /* HomeViewController.swift */; };
+		E70FCECE2BC7E6CB0014950B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCECD2BC7E6CB0014950B /* HomeView.swift */; };
+		E70FCED12BC7E8810014950B /* HomeViewSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCED02BC7E8810014950B /* HomeViewSections.swift */; };
+		E70FCED42BC7EA2F0014950B /* CategoriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCED32BC7EA2F0014950B /* CategoriesViewCell.swift */; };
+		E70FCED72BC7EA3F0014950B /* Cell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCED62BC7EA3F0014950B /* Cell+Ext.swift */; };
+		E70FCED92BC7EA620014950B /* NewPartnersViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCED82BC7EA620014950B /* NewPartnersViewCell.swift */; };
+		E70FCEDB2BC7EA6D0014950B /* GymItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEDA2BC7EA6D0014950B /* GymItemCell.swift */; };
+		E70FCEDD2BC7EC310014950B /* CategoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEDC2BC7EC310014950B /* CategoryItemCell.swift */; };
+		E70FCEE02BC7F2FB0014950B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEDF2BC7F2FB0014950B /* ProfileViewController.swift */; };
+		E70FCEE22BC7F30C0014950B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEE12BC7F30C0014950B /* ProfileView.swift */; };
+		E70FCEE42BC7F4000014950B /* SettingsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEE32BC7F4000014950B /* SettingsItemCell.swift */; };
+		E70FCEE62BC7F45E0014950B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEE52BC7F45E0014950B /* SettingsViewModel.swift */; };
+		E70FCEE82BC7F9080014950B /* SettingsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEE72BC7F9080014950B /* SettingsInfoViewController.swift */; };
+		E70FCEEB2BC7F9500014950B /* SettingsInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEEA2BC7F9500014950B /* SettingsInfoView.swift */; };
+		E70FCEFB2BCBB8400014950B /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEFA2BCBB8400014950B /* ViewController+Ext.swift */; };
+		E70FCEFE2BCBBB480014950B /* GymStarRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEFD2BCBBB480014950B /* GymStarRateView.swift */; };
+		E70FCF002BCBC4FC0014950B /* GymItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEFF2BCBC4FC0014950B /* GymItemView.swift */; };
+		E70FCF022BCBC6240014950B /* GymItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCF012BCBC6240014950B /* GymItemCollectionViewCell.swift */; };
+		E70FCF042BCBC9090014950B /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCF032BCBC9090014950B /* HomeSectionHeaderView.swift */; };
+		E70FCF072BCBCEB00014950B /* GymDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCF062BCBCEB00014950B /* GymDetailViewController.swift */; };
+		E70FCF092BCBCEC40014950B /* GymDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCF082BCBCEC40014950B /* GymDetailView.swift */; };
+		E7B35F192BCE7AE300EBE0D5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F182BCE7AE300EBE0D5 /* HeaderView.swift */; };
+		E7B35F1B2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F1A2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift */; };
+		E7B35F1D2BCE870600EBE0D5 /* GymDetailViewSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F1C2BCE870600EBE0D5 /* GymDetailViewSections.swift */; };
+		E7B35F1F2BCE884400EBE0D5 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F1E2BCE884400EBE0D5 /* SectionHeaderView.swift */; };
+		E7B35F262BCE88D700EBE0D5 /* GymInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F252BCE88D700EBE0D5 /* GymInfoViewCell.swift */; };
+		E7B35F282BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F272BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift */; };
+		E7B35F2A2BCE8F3C00EBE0D5 /* HomeVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F292BCE8F3C00EBE0D5 /* HomeVC+Ext.swift */; };
+		E7B35F2E2BCEB81D00EBE0D5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F2D2BCEB81D00EBE0D5 /* FavoritesViewController.swift */; };
+		E7B35F302BCEB89400EBE0D5 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F2F2BCEB89400EBE0D5 /* FavoritesView.swift */; };
+		E7B35F332BCEBC6600EBE0D5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = E7B35F322BCEBC6600EBE0D5 /* data.json */; };
+		E7B35F352BCEC21500EBE0D5 /* HomeDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F342BCEC21500EBE0D5 /* HomeDataResponse.swift */; };
+		E7B35F382BCEC29E00EBE0D5 /* HomeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F372BCEC29E00EBE0D5 /* HomeDataManager.swift */; };
+		E7B35F3A2BCEC8C900EBE0D5 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F392BCEC8C900EBE0D5 /* Color+Ext.swift */; };
+		E7B35F3C2BCFA0AD00EBE0D5 /* services.json in Resources */ = {isa = PBXBuildFile; fileRef = E7B35F3B2BCFA0AD00EBE0D5 /* services.json */; };
+		E7B35F3E2BCFA0C700EBE0D5 /* allGyms.json in Resources */ = {isa = PBXBuildFile; fileRef = E7B35F3D2BCFA0C700EBE0D5 /* allGyms.json */; };
+		E7B35F402BCFA13E00EBE0D5 /* GymGeneralInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F3F2BCFA13E00EBE0D5 /* GymGeneralInfoViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E70FCEAB2BC7DE600014950B /* FitnessAppMidtermProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessAppMidtermProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E70FCEAE2BC7DE600014950B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E70FCEB02BC7DE600014950B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E70FCEB22BC7DE600014950B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E70FCEB52BC7DE600014950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E70FCEB82BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessAppMidtermProject.xcdatamodel; sourceTree = "<group>"; };
 		E70FCEBA2BC7DE610014950B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E70FCEBD2BC7DE610014950B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E70FCEBF2BC7DE610014950B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E70FCEC82BC7E00B0014950B /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		E70FCECA2BC7E1A40014950B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E70FCECD2BC7E6CB0014950B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E70FCED02BC7E8810014950B /* HomeViewSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewSections.swift; sourceTree = "<group>"; };
+		E70FCED32BC7EA2F0014950B /* CategoriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewCell.swift; sourceTree = "<group>"; };
+		E70FCED62BC7EA3F0014950B /* Cell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Ext.swift"; sourceTree = "<group>"; };
+		E70FCED82BC7EA620014950B /* NewPartnersViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPartnersViewCell.swift; sourceTree = "<group>"; };
+		E70FCEDA2BC7EA6D0014950B /* GymItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymItemCell.swift; sourceTree = "<group>"; };
+		E70FCEDC2BC7EC310014950B /* CategoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemCell.swift; sourceTree = "<group>"; };
+		E70FCEDF2BC7F2FB0014950B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E70FCEE12BC7F30C0014950B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E70FCEE32BC7F4000014950B /* SettingsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemCell.swift; sourceTree = "<group>"; };
+		E70FCEE52BC7F45E0014950B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		E70FCEE72BC7F9080014950B /* SettingsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoViewController.swift; sourceTree = "<group>"; };
+		E70FCEEA2BC7F9500014950B /* SettingsInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInfoView.swift; sourceTree = "<group>"; };
+		E70FCEFA2BCBB8400014950B /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		E70FCEFD2BCBBB480014950B /* GymStarRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymStarRateView.swift; sourceTree = "<group>"; };
+		E70FCEFF2BCBC4FC0014950B /* GymItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymItemView.swift; sourceTree = "<group>"; };
+		E70FCF012BCBC6240014950B /* GymItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E70FCF032BCBC9090014950B /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
+		E70FCF062BCBCEB00014950B /* GymDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailViewController.swift; sourceTree = "<group>"; };
+		E70FCF082BCBCEC40014950B /* GymDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailView.swift; sourceTree = "<group>"; };
+		E7B35F182BCE7AE300EBE0D5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		E7B35F1A2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GymDetailVC+Ext.swift"; sourceTree = "<group>"; };
+		E7B35F1C2BCE870600EBE0D5 /* GymDetailViewSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailViewSections.swift; sourceTree = "<group>"; };
+		E7B35F1E2BCE884400EBE0D5 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		E7B35F252BCE88D700EBE0D5 /* GymInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymInfoViewCell.swift; sourceTree = "<group>"; };
+		E7B35F272BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymContactInfoViewCell.swift; sourceTree = "<group>"; };
+		E7B35F292BCE8F3C00EBE0D5 /* HomeVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Ext.swift"; sourceTree = "<group>"; };
+		E7B35F2D2BCEB81D00EBE0D5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		E7B35F2F2BCEB89400EBE0D5 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		E7B35F322BCEBC6600EBE0D5 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		E7B35F342BCEC21500EBE0D5 /* HomeDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataResponse.swift; sourceTree = "<group>"; };
+		E7B35F372BCEC29E00EBE0D5 /* HomeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataManager.swift; sourceTree = "<group>"; };
+		E7B35F392BCEC8C900EBE0D5 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		E7B35F3B2BCFA0AD00EBE0D5 /* services.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = services.json; sourceTree = "<group>"; };
+		E7B35F3D2BCFA0C700EBE0D5 /* allGyms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = allGyms.json; sourceTree = "<group>"; };
+		E7B35F3F2BCFA13E00EBE0D5 /* GymGeneralInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymGeneralInfoViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +132,14 @@
 		E70FCEAD2BC7DE600014950B /* FitnessAppMidtermProject */ = {
 			isa = PBXGroup;
 			children = (
+				E7B35F362BCEC28C00EBE0D5 /* Managers */,
+				E7B35F312BCEBBF900EBE0D5 /* Data */,
+				E70FCED52BC7EA340014950B /* Extensions */,
+				E70FCEC72BC7DFFB0014950B /* Models */,
+				E70FCEC62BC7DFF50014950B /* Views */,
+				E70FCEC52BC7DFEF0014950B /* Controllers */,
 				E70FCEAE2BC7DE600014950B /* AppDelegate.swift */,
 				E70FCEB02BC7DE600014950B /* SceneDelegate.swift */,
-				E70FCEB22BC7DE600014950B /* ViewController.swift */,
 				E70FCEB42BC7DE600014950B /* Main.storyboard */,
 				E70FCEBA2BC7DE610014950B /* Assets.xcassets */,
 				E70FCEBC2BC7DE610014950B /* LaunchScreen.storyboard */,
@@ -68,6 +147,182 @@
 				E70FCEB72BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld */,
 			);
 			path = FitnessAppMidtermProject;
+			sourceTree = "<group>";
+		};
+		E70FCEC52BC7DFEF0014950B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7B35F2C2BCEB80B00EBE0D5 /* Favorites */,
+				E70FCF052BCBCE9F0014950B /* GymDetail */,
+				E70FCEDE2BC7F2EF0014950B /* Profile */,
+				E70FCECF2BC7E6CF0014950B /* TabBar */,
+				E70FCECC2BC7E6BD0014950B /* Home */,
+				E70FCEE92BC7F9420014950B /* SettingsInfo */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E70FCEC62BC7DFF50014950B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEFC2BCBBB3E0014950B /* Custom */,
+				E70FCED22BC7EA1E0014950B /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E70FCEC72BC7DFFB0014950B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCED02BC7E8810014950B /* HomeViewSections.swift */,
+				E70FCEE52BC7F45E0014950B /* SettingsViewModel.swift */,
+				E7B35F1C2BCE870600EBE0D5 /* GymDetailViewSections.swift */,
+				E7B35F342BCEC21500EBE0D5 /* HomeDataResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E70FCECC2BC7E6BD0014950B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCECA2BC7E1A40014950B /* HomeViewController.swift */,
+				E7B35F292BCE8F3C00EBE0D5 /* HomeVC+Ext.swift */,
+				E70FCECD2BC7E6CB0014950B /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E70FCECF2BC7E6CF0014950B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEC82BC7E00B0014950B /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E70FCED22BC7EA1E0014950B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E7B35F242BCE88CA00EBE0D5 /* GymDetail */,
+				E7B35F212BCE88AE00EBE0D5 /* Categories */,
+				E7B35F202BCE889100EBE0D5 /* Home */,
+				E7B35F232BCE88C200EBE0D5 /* Settings */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E70FCED52BC7EA340014950B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCED62BC7EA3F0014950B /* Cell+Ext.swift */,
+				E70FCEFA2BCBB8400014950B /* ViewController+Ext.swift */,
+				E7B35F392BCEC8C900EBE0D5 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E70FCEDE2BC7F2EF0014950B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEDF2BC7F2FB0014950B /* ProfileViewController.swift */,
+				E70FCEE12BC7F30C0014950B /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E70FCEE92BC7F9420014950B /* SettingsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEE72BC7F9080014950B /* SettingsInfoViewController.swift */,
+				E70FCEEA2BC7F9500014950B /* SettingsInfoView.swift */,
+			);
+			path = SettingsInfo;
+			sourceTree = "<group>";
+		};
+		E70FCEFC2BCBBB3E0014950B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEFD2BCBBB480014950B /* GymStarRateView.swift */,
+				E70FCEFF2BCBC4FC0014950B /* GymItemView.swift */,
+				E70FCF032BCBC9090014950B /* HomeSectionHeaderView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		E70FCF052BCBCE9F0014950B /* GymDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCF062BCBCEB00014950B /* GymDetailViewController.swift */,
+				E7B35F1A2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift */,
+				E70FCF082BCBCEC40014950B /* GymDetailView.swift */,
+				E7B35F182BCE7AE300EBE0D5 /* HeaderView.swift */,
+				E7B35F1E2BCE884400EBE0D5 /* SectionHeaderView.swift */,
+			);
+			path = GymDetail;
+			sourceTree = "<group>";
+		};
+		E7B35F202BCE889100EBE0D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEDA2BC7EA6D0014950B /* GymItemCell.swift */,
+				E70FCF012BCBC6240014950B /* GymItemCollectionViewCell.swift */,
+				E70FCED82BC7EA620014950B /* NewPartnersViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E7B35F212BCE88AE00EBE0D5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEDC2BC7EC310014950B /* CategoryItemCell.swift */,
+				E70FCED32BC7EA2F0014950B /* CategoriesViewCell.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		E7B35F232BCE88C200EBE0D5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E70FCEE32BC7F4000014950B /* SettingsItemCell.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E7B35F242BCE88CA00EBE0D5 /* GymDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E7B35F252BCE88D700EBE0D5 /* GymInfoViewCell.swift */,
+				E7B35F3F2BCFA13E00EBE0D5 /* GymGeneralInfoViewCell.swift */,
+				E7B35F272BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift */,
+			);
+			path = GymDetail;
+			sourceTree = "<group>";
+		};
+		E7B35F2C2BCEB80B00EBE0D5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E7B35F2D2BCEB81D00EBE0D5 /* FavoritesViewController.swift */,
+				E7B35F2F2BCEB89400EBE0D5 /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		E7B35F312BCEBBF900EBE0D5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E7B35F322BCEBC6600EBE0D5 /* data.json */,
+				E7B35F3B2BCFA0AD00EBE0D5 /* services.json */,
+				E7B35F3D2BCFA0C700EBE0D5 /* allGyms.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E7B35F362BCEC28C00EBE0D5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E7B35F372BCEC29E00EBE0D5 /* HomeDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +384,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E70FCEBE2BC7DE610014950B /* LaunchScreen.storyboard in Resources */,
+				E7B35F3E2BCFA0C700EBE0D5 /* allGyms.json in Resources */,
+				E7B35F3C2BCFA0AD00EBE0D5 /* services.json in Resources */,
 				E70FCEBB2BC7DE610014950B /* Assets.xcassets in Resources */,
+				E7B35F332BCEBC6600EBE0D5 /* data.json in Resources */,
 				E70FCEB62BC7DE600014950B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,10 +399,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E70FCEB32BC7DE600014950B /* ViewController.swift in Sources */,
+				E70FCEE42BC7F4000014950B /* SettingsItemCell.swift in Sources */,
+				E70FCEE82BC7F9080014950B /* SettingsInfoViewController.swift in Sources */,
+				E70FCEDD2BC7EC310014950B /* CategoryItemCell.swift in Sources */,
+				E7B35F402BCFA13E00EBE0D5 /* GymGeneralInfoViewCell.swift in Sources */,
+				E70FCED42BC7EA2F0014950B /* CategoriesViewCell.swift in Sources */,
+				E7B35F262BCE88D700EBE0D5 /* GymInfoViewCell.swift in Sources */,
+				E7B35F1B2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift in Sources */,
+				E70FCF092BCBCEC40014950B /* GymDetailView.swift in Sources */,
+				E70FCECE2BC7E6CB0014950B /* HomeView.swift in Sources */,
+				E7B35F352BCEC21500EBE0D5 /* HomeDataResponse.swift in Sources */,
+				E70FCEE02BC7F2FB0014950B /* ProfileViewController.swift in Sources */,
+				E7B35F382BCEC29E00EBE0D5 /* HomeDataManager.swift in Sources */,
+				E7B35F2A2BCE8F3C00EBE0D5 /* HomeVC+Ext.swift in Sources */,
 				E70FCEAF2BC7DE600014950B /* AppDelegate.swift in Sources */,
 				E70FCEB12BC7DE600014950B /* SceneDelegate.swift in Sources */,
+				E70FCEE62BC7F45E0014950B /* SettingsViewModel.swift in Sources */,
+				E70FCF042BCBC9090014950B /* HomeSectionHeaderView.swift in Sources */,
+				E70FCF022BCBC6240014950B /* GymItemCollectionViewCell.swift in Sources */,
+				E70FCF002BCBC4FC0014950B /* GymItemView.swift in Sources */,
+				E70FCEE22BC7F30C0014950B /* ProfileView.swift in Sources */,
+				E7B35F1F2BCE884400EBE0D5 /* SectionHeaderView.swift in Sources */,
+				E70FCED92BC7EA620014950B /* NewPartnersViewCell.swift in Sources */,
+				E70FCED72BC7EA3F0014950B /* Cell+Ext.swift in Sources */,
+				E7B35F1D2BCE870600EBE0D5 /* GymDetailViewSections.swift in Sources */,
+				E70FCF072BCBCEB00014950B /* GymDetailViewController.swift in Sources */,
+				E70FCEC92BC7E00B0014950B /* TabBarViewController.swift in Sources */,
+				E70FCEFB2BCBB8400014950B /* ViewController+Ext.swift in Sources */,
+				E70FCEDB2BC7EA6D0014950B /* GymItemCell.swift in Sources */,
+				E70FCED12BC7E8810014950B /* HomeViewSections.swift in Sources */,
+				E70FCEEB2BC7F9500014950B /* SettingsInfoView.swift in Sources */,
 				E70FCEB92BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld in Sources */,
+				E7B35F3A2BCEC8C900EBE0D5 /* Color+Ext.swift in Sources */,
+				E7B35F2E2BCEB81D00EBE0D5 /* FavoritesViewController.swift in Sources */,
+				E7B35F282BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift in Sources */,
+				E7B35F302BCEB89400EBE0D5 /* FavoritesView.swift in Sources */,
+				E70FCEFE2BCBBB480014950B /* GymStarRateView.swift in Sources */,
+				E70FCECB2BC7E1A40014950B /* HomeViewController.swift in Sources */,
+				E7B35F192BCE7AE300EBE0D5 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
