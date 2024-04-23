@@ -9,12 +9,14 @@ import Foundation
 
 
 enum GymDetailViewSections: CaseIterable {
+    case generalInfo
     case aboutInfo
     case includedServices
     case contactInfo
+    case socialMediaAccounts
     
 
-    var sectionTitle: String {
+    var sectionTitle: String? {
         switch self {
         case .aboutInfo:
             "About"
@@ -22,6 +24,8 @@ enum GymDetailViewSections: CaseIterable {
             "Services"
         case .contactInfo:
             "Contact"
+        default:
+            nil
         }
     }
 }

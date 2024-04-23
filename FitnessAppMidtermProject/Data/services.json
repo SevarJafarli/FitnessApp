@@ -7,6 +7,7 @@
         "imageColor": "#48cae4",
         "bgColor": "#0096c7"
         },
+        
         {
         "id": 2,
         "serviceName": "Women",
@@ -35,19 +36,19 @@
         "imageColor": "#ff9e00",
         "bgColor": "#ff6d00"
         },
-                {
+        {
         "id": 6,
         "serviceName": "Spa",
         "serviceImage": "spa",
         "imageColor": "#ade8f4",
         "bgColor": "#00b4d8"
         },
-                {
+        {
         "id": 7,
         "serviceName": "Martial Arts",
         "serviceImage": "wrestling",
         "imageColor": "#e7bc91",
         "bgColor": "#a47148"
-        },
+        }
     ]
 }

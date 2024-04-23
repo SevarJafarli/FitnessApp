@@ -1,4 +1,489 @@
 {
-    
-    
+    "allGyms": [
+    {
+    "id": 1,
+    "gymName": "Arslan Fitness Center",
+    "rating": 4.6,
+    "gymImage": "crossfit1",
+    "openDays": "1-5-ci günlər",
+    "openHours": "05:30-22:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Aerobika\n- Sayklinq\n- Mind Body\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2, 6
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Bakixanov settlement, Sulh str. 14/2"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "whatsapp"
+        
+    ],
+    "isNearby": false,
+    "isNewPartner": true
+    },
+    {
+    "id": 2,
+    "gymName": "Ceyhun Veliyev Baku",
+    "rating": 4.5,
+    "gymImage": "crossfit2",
+    "openDays": "1-6-ci günlər",
+    "openHours": "09:00-22:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Aerobika\n- Sayklinq\n- Döyüş idman növləri\n- Mind Body\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        2, 3, 6
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nazim Ismayilov 119A"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "facebook",
+        "whatsapp"
+        
+    ],
+    "isNearby": false,
+    "isNewPartner": true
+    },
+    {
+    "id": 3,
+    "gymName": "World Class Baku",
+    "rating": 4.6,
+    "gymImage": "martial2",
+    "openDays": "1-5-ci günlər",
+    "openHours": "05:30-22:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Aerobika\n- Sayklinq\n- Döyüş idman növləri\n- Mind Body\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2, 3
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nigar Rafibeyli 12/14"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "facebook",
+        "whatsapp"
+        
+    ],
+    "isNearby": true,
+    "isNewPartner": false
+    },
+    {
+    "id": 4,
+    "gymName": "Motivator Fitness Club",
+    "rating": 4.2,
+    "gymImage": "crossfit4",
+    "openDays": "1-6-ci günlər",
+    "openHours": "08:30-21:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Aerobika\n- Sayklinq\n- Döyüş idman növləri\n- Mind Body\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2, 3, 5, 6
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nigar Rafibeyli 12/14"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "facebook",
+        "whatsapp"
+        
+    ],
+    "isNearby": true,
+    "isNewPartner": true
+    },
+
+    {
+    "id": 5,
+    "gymName": "Baku Tennis Academy",
+    "rating": 4.0,
+    "gymImage": "pool2",
+    "openDays": "1-6-ci günlər",
+    "openHours": "09:00-21:30",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Aerobika\n- Sayklinq\n- Döyüş idman növləri\n- Mind Body\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2, 3, 4, 7
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "8th microdistrict, Ibrahimpasa dadasov str"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "whatsapp"
+    ],
+    "isNearby": false,
+    "isNewPartner": false
+    },
+
+
+    {
+    "id": 6,
+    "gymName": "Excelsior Hotel & Spa",
+    "rating": 4.8,
+    "gymImage": "spa1",
+    "openDays": "1-5-ci günlər",
+    "openHours": "09:30-22:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Haydar Aliyev ave, 2"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "facebook",
+        "whatsapp"
+        
+    ],
+    "isNearby": true,
+    "isNewPartner": false
+    },
+
+    {
+    "id": 7,
+    "gymName": "Lavanda Spa & Wellness",
+    "rating": 4.5,
+    "gymImage": "pilates1",
+    "openDays": "1-6-ci günlər",
+    "openHours": "08:30-21:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2, 4
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nigar Rafibeyli 12/14"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "facebook",
+        "whatsapp"
+        
+    ],
+    "isNearby": true,
+    "isNewPartner": false
+    },
+    {
+    "id": 8,
+    "gymName": "Royal Fit",
+    "rating": 4.0,
+    "gymImage": "yoga1",
+    "openDays": "1-5-ci günlər",
+    "openHours": "05:30-22:00",
+    "about": "Plana daxildir:\n- Döyüş idman növləri\n- Yoga\n- Kickboxing\nQeyd: Ancaq xanımlar üçündür.",
+    "includingServiceIds": [
+        2, 4, 7
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nigar Rafibeyli 12/14"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "whatsapp"
+        
+    ],
+    "isNearby": false,
+    "isNewPartner": false
+    },
+    {
+    "id": 9,
+    "gymName": "Fairmont Spa",
+    "rating": 4.6,
+    "gymImage": "spa2",
+    "openDays": "1-5-ci günlər",
+    "openHours": "05:30-22:00",
+    "about": "Plana daxildir:\n- Fitnes\n- Qapalı hovuz\n- Sauna\n- Buxar otağı\n- Aerobika\n- Sayklinq\n- Döyüş idman növləri\n- Mind Body\n- Parkinq\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+        1, 2, 3, 4, 6, 7
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nigar Rafibeyli 12/14"
+    ],
+    "socialMediaAccs": [
+        "instagram",
+        "facebook",
+        "whatsapp"
+        
+    ],
+    "isNearby": false,
+    "isNewPartner": true
+    },
+
+    {
+    "id": 10,
+    "gymName": "Ravfit Fitness",
+    "rating": 4.2,
+    "gymImage": "crossfit3",
+    "openDays": "1-5-ci günlər",
+    "openHours": "07:30-22:00",
+    "about": "Plana daxildir:\n- Fitness\n- Crossfit\n\nQeyd: Xanım zalı mövcuddur.",
+    "includingServiceIds": [
+       5
+    ],
+    "contactInfo": [
+         "+994 (99) 999 22 11",
+         "Nigar Rafibeyli 12/14"
+    ],
+    "socialMediaAccs": [
+        "whatsapp"
+    ],
+    "isNearby": true,
+    "isNewPartner": false
+    },
+    {
+        "id": 11,
+        "gymName": "Fitness Hub",
+        "rating": 4.8,
+        "gymImage": "fitness1",
+        "about": "Fitness Hub offers state-of-the-art equipment and personalized training programs tailored to your fitness goals. Join us to embark on a journey towards a healthier lifestyle!",
+        "openDays": "Monday - Saturday",
+        "openHours": "06:00 - 21:00",
+        "includingServiceIds": [1, 3, 5],
+        "contactInfo": [
+            "+994 (55) 123 4567",
+            "123 Fitness Avenue, City Center"
+        ],
+        "socialMediaAccs": [
+            "facebook",
+            "instagram",
+            "whatsapp"
+        ],
+        "isNearby": true,
+        "isNewPartner": false
+    },
+    {
+        "id": 12,
+        "gymName": "PowerHouse Gym",
+        "rating": 4.5,
+        "gymImage": "martial1",
+        "about": "PowerHouse Gym is your ultimate destination for strength training and muscle building. Our experienced trainers will guide you through every step of your fitness journey.",
+        "openDays": "Monday - Sunday",
+        "openHours": "05:00 - 23:00",
+        "includingServiceIds": [2, 4, 6],
+        "contactInfo": [
+            "+994 (50) 987 6543",
+            "456 Strength Street, Fitness District"
+        ],
+        "socialMediaAccs": [
+            "instagram",
+            "whatsapp"
+        ],
+        "isNearby": false,
+        "isNewPartner": true
+    },
+    {
+            "id": 13,
+            "gymName": "FitZone Fitness Center",
+            "rating": 4.4,
+            "gymImage": "fitness3",
+            "about": "FitZone Fitness Center offers a wide range of fitness programs including yoga, cardio, and strength training. Our friendly staff and modern facilities ensure a rewarding fitness experience for all.",
+            "openDays": "Monday - Saturday",
+            "openHours": "06:00 - 20:00",
+            "includingServiceIds": [1, 3, 5],
+            "contactInfo": [
+                "+994 (55) 678 1234",
+                "789 Wellness Street, Fitness District"
+            ],
+            "socialMediaAccs": [
+                "facebook",
+                "twitter",
+                "whatsapp"
+            ],
+            "isNearby": true,
+            "isNewPartner": false
+        },
+        {
+            "id": 14,
+            "gymName": "Active Life Fitness Studio",
+            "rating": 4.9,
+            "gymImage": "fitness4",
+            "about": "Active Life Fitness Studio is dedicated to promoting health and wellness through fun and engaging fitness classes. Join us to discover a vibrant community committed to active living!",
+            "openDays": "Monday - Sunday",
+            "openHours": "05:30 - 22:00",
+            "includingServiceIds": [2, 4, 6],
+            "contactInfo": [
+                "+994 (50) 567 8901",
+                "123 Active Avenue, Fitness Plaza"
+            ],
+            "socialMediaAccs": [
+                "instagram",
+                "twitter"
+            ],
+            "isNearby": false,
+            "isNewPartner": true
+        },
+        {
+            "id": 15,
+            "gymName": "FitPro Wellness Center",
+            "rating": 4.6,
+            "gymImage": "fitness5",
+            "about": "FitPro Wellness Center offers comprehensive fitness solutions including personalized training, nutrition counseling, and group fitness classes. Join us to unlock your full potential!",
+            "openDays": "Monday - Saturday",
+            "openHours": "07:00 - 21:00",
+            "includingServiceIds": [1, 2, 3],
+            "contactInfo": [
+                "+994 (55) 321 0987",
+                "456 Wellness Street, Fitness District"
+            ],
+            "socialMediaAccs": [
+                "facebook",
+                "instagram"
+            ],
+            "isNearby": true,
+            "isNewPartner": false
+        },
+        {
+            "id": 16,
+            "gymName": "Dynamic Fitness Center",
+            "rating": 4.7,
+            "gymImage": "pool3",
+            "about": "Dynamic Fitness Center is your destination for high-energy workouts and cutting-edge fitness equipment. Our experienced trainers will motivate and inspire you to achieve your fitness goals.",
+            "openDays": "Monday - Sunday",
+            "openHours": "06:00 - 23:00",
+            "includingServiceIds": [4, 5, 7],
+            "contactInfo": [
+                "+994 (50) 987 6543",
+                "789 Dynamic Street, Fitness Plaza"
+            ],
+            "socialMediaAccs": [
+                "instagram",
+                "twitter",
+                "whatsapp"
+            ],
+            "isNearby": true,
+            "isNewPartner": true
+        },
+        {
+            "id": 17,
+            "gymName": "FitQuest Gym & Spa",
+            "rating": 4.5,
+            "gymImage": "fitness6",
+            "about": "FitQuest Gym & Spa offers a holistic approach to fitness and wellness with a wide range of services including gym facilities, spa treatments, and nutrition counseling. Join us to rejuvenate your mind, body, and soul!",
+            "openDays": "Monday - Friday",
+            "openHours": "08:00 - 20:00",
+            "includingServiceIds": [1, 3, 6],
+            "contactInfo": [
+                "+994 (55) 234 5678",
+                "789 Fitness Boulevard, Wellness District"
+            ],
+            "socialMediaAccs": [
+                "facebook",
+                "instagram"
+            ],
+            "isNearby": false,
+            "isNewPartner": false
+        },
+        {
+            "id": 18,
+            "gymName": "FitFlex Gym",
+            "rating": 4.8,
+            "gymImage": "fitness7",
+            "about": "FitFlex Gym is a premier fitness destination offering a diverse range of workouts including strength training, yoga, and group fitness classes. Join us to unleash your inner athlete!",
+            "openDays": "Monday - Sunday",
+            "openHours": "06:00 - 22:00",
+            "includingServiceIds": [2, 4, 7],
+            "contactInfo": [
+                "+994 (50) 876 5432",
+                "123 Flex Street, Fitness Plaza"
+            ],
+            "socialMediaAccs": [
+                "instagram",
+                "twitter"
+            ],
+            "isNearby": true,
+            "isNewPartner": true
+        },
+        {
+            "id": 19,
+            "gymName": "Vitality Fitness Studio",
+            "rating": 4.6,
+            "gymImage": "fitness8",
+            "about": "Vitality Fitness Studio offers personalized fitness programs designed to help you achieve your health and wellness goals. Our expert trainers and supportive community will guide you on your journey to vitality!",
+            "openDays": "Monday - Saturday",
+            "openHours": "07:00 - 20:00",
+            "includingServiceIds": [1, 5, 6],
+            "contactInfo": [
+                "+994 (55) 789 0123",
+                "456 Vitality Street, Wellness District"
+            ],
+            "socialMediaAccs": [
+                "facebook",
+                "instagram",
+                "whatsapp"
+            ],
+            "isNearby": false,
+            "isNewPartner": false
+        },
+        {
+            "id": 20,
+            "gymName": "Peak Performance Gym",
+            "rating": 4.9,
+            "gymImage": "fitness1",
+            "about": "Peak Performance Gym is committed to helping you reach new heights in fitness and wellbeing. Our cutting-edge facilities and expert trainers will empower you to surpass your limits!",
+            "openDays": "Monday - Sunday",
+            "openHours": "05:30 - 22:30",
+            "includingServiceIds": [2, 3, 7],
+            "contactInfo": [
+                "+994 (50) 567 8901",
+                "123 Peak Street, Fitness Plaza"
+            ],
+            "socialMediaAccs": [
+                "instagram",
+                "twitter",
+                "whatsapp"
+            ],
+            "isNearby": true,
+            "isNewPartner": true
+        },
+        {
+            "id": 21,
+            "gymName": "FitWorks Fitness Center",
+            "rating": 4.7,
+            "gymImage": "fitness7",
+            "about": "FitWorks Fitness Center offers a wide range of fitness programs suitable for all fitness levels. Whether you're a beginner or an experienced athlete, our welcoming environment and expert trainers will help you achieve your goals!",
+            "openDays": "Monday - Saturday",
+            "openHours": "06:00 - 21:00",
+            "includingServiceIds": [1, 4, 5],
+            "contactInfo": [
+                "+994 (55) 345 6789",
+                "123 Fitness Street, Fitness Plaza"
+            ],
+            "socialMediaAccs": [
+                "facebook",
+                "instagram"
+            ],
+            "isNearby": false,
+            "isNewPartner": false
+        },
+        {
+            "id": 22,
+            "gymName": "Energize Fitness Club",
+            "rating": 4.8,
+            "gymImage": "crossfit4",
+            "about": "Energize Fitness Club offers a dynamic fitness experience with innovative classes and top-of-the-line equipment. Join us to revitalize your body, mind, and spirit!",
+            "openDays": "Monday - Sunday",
+            "openHours": "05:00 - 23:00",
+            "includingServiceIds": [3, 6, 7],
+            "contactInfo": [
+                "+994 (50) 234 5678",
+                "456 Energy Street, Fitness District"
+            ],
+            "socialMediaAccs": [
+                "instagram",
+                "twitter",
+                "whatsapp"
+            ],
+            "isNearby": true,
+            "isNewPartner": true
+        }
+
+]
 }

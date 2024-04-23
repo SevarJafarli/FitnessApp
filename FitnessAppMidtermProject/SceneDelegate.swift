@@ -32,6 +32,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
+    
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
     }
@@ -39,6 +40,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
+        hidePrivacyProtectionWindow()
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
@@ -47,9 +49,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
 
         // Save changes in the application's managed object context when the application transitions to the background.
+        
         (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+        showPrivacyProtectionWindow()
     }
 
+    private var privacyProtectionWindow: UIWindow?
 
+        private func showPrivacyProtectionWindow() {
+            guard let windowScene = self.window?.windowScene else {
+                return
+            }
+
+            privacyProtectionWindow = UIWindow(windowScene: windowScene)
+            let vc  = UIViewController()
+            vc.view.backgroundColor  = .red
+            privacyProtectionWindow?.rootViewController = vc
+            privacyProtectionWindow?.windowLevel = .alert + 1
+            privacyProtectionWindow?.makeKeyAndVisible()
+        }
+
+        private func hidePrivacyProtectionWindow() {
+            privacyProtectionWindow?.isHidden = true
+            privacyProtectionWindow = nil
+        }
+    
+    
+    
 }
+
+
 

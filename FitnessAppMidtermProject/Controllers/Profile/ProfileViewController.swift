@@ -9,27 +9,41 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-    private let mainView: ProfileView = {
-        let view = ProfileView()
-        return view
+    private lazy var tableView: UITableView = {
+        let tv = UITableView(frame: .zero, style: .grouped)
+        tv.separatorStyle = .none
+        tv.backgroundColor = .clear
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        tv.register(SettingsItemCell.self, forCellReuseIdentifier: SettingsItemCell.reuseIdentifier)
+        tv.dataSource = self
+        tv.delegate = self
+        return tv
     }()
     
-    override func loadView() {
-        super.loadView()
-        self.view = mainView
+    private func setupUI() {
+        view.backgroundColor = .appBackground
     }
+    
+    private func addSubviews() {
+        view.addSubview(tableView)
+    }
+    
+    private func addConstraints() {
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -24),
+        ])
+    }
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
-        self.mainView.tableView.dataSource = self
-        self.mainView.tableView.delegate = self
-    }
-    
-    private func setupNavigationBar() {
         title = "Profile"
-        navigationItem.largeTitleDisplayMode = .never
-        navigationController?.navigationBar.prefersLargeTitles = false
+        setupUI()
+        addSubviews()
+        addConstraints()
     }
 }
 

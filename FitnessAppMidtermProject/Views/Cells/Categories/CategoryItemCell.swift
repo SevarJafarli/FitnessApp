@@ -9,31 +9,10 @@ import UIKit
 
 class CategoryItemCell: UICollectionViewCell {
     
-    private let roundView: UIView = {
-        let view = UIView(frame: .init(x: 0, y: 0, width: 72, height: 72))
-        view.backgroundColor = .blue
-        view.layer.cornerRadius = view.frame.height / 2
-        view.clipsToBounds = true
+    private let view: ImageCircleView = {
+        let view = ImageCircleView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
-    }()
-    
-    private let imageView: UIImageView = {
-        let imgView = UIImageView()
-        imgView.image = .explore
-        imgView.translatesAutoresizingMaskIntoConstraints = false
-        return imgView
-    }()
-    
-    private let titleLabel: UILabel = {
-        let lbl = UILabel()
-        lbl.text = "Poodjdjjddj dhdd l"
-        lbl.textAlignment = .center
-        lbl.numberOfLines = 2
-        lbl.font = .systemFont(ofSize: 15, weight: .regular)
-        lbl.textColor = .label.withAlphaComponent(0.7)
-        lbl.translatesAutoresizingMaskIntoConstraints = false
-        return lbl
     }()
     
     //MARK: Init
@@ -52,37 +31,21 @@ class CategoryItemCell: UICollectionViewCell {
     
     
     private func addSubviews() {
-        roundView.addSubview(imageView)
-        contentView.addSubview(roundView)
-        contentView.addSubview(titleLabel)
+        contentView.addSubview(view)
     }
     
     
     private func addConstraints() {
         NSLayoutConstraint.activate([
-            roundView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            roundView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            roundView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            roundView.widthAnchor.constraint(equalToConstant: 72),
-            roundView.heightAnchor.constraint(equalToConstant: 72),
-            
-            imageView.widthAnchor.constraint(equalToConstant: 48),
-            imageView.heightAnchor.constraint(equalToConstant: 48),
-            imageView.centerYAnchor.constraint(equalTo: roundView.centerYAnchor),
-            imageView.centerXAnchor.constraint(equalTo: roundView.centerXAnchor),
-            
-            titleLabel.topAnchor.constraint(equalTo: roundView.bottomAnchor, constant: 2),
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 2),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -2),
-            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            view.topAnchor.constraint(equalTo: contentView.topAnchor),
+            view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
       
     }
     
     public func configure(with service: GymServiceModel) {
-        titleLabel.text = service.serviceName
-        imageView.image = UIImage(named: service.serviceImage)
-        imageView.tintColor = UIColor(hex: service.imageColor)
-        roundView.backgroundColor = UIColor(hex: service.bgColor)
+        view.configure(with: .init(title: service.serviceName, image: UIImage(named: service.serviceImage), imageColor: UIColor(hex: service.imageColor), bgColor: UIColor(hex: service.bgColor)))
     }
 }

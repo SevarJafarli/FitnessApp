@@ -50,6 +50,7 @@ extension FavoritesViewController: UITableViewDataSource {
 extension FavoritesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = GymDetailViewController()
+       
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -63,6 +64,16 @@ extension FavoritesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        240
+        GymItemTableViewCell.Constants.cellHeight
+    }
+    
+    
+    //animation
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        
+        UIView.animate(withDuration: 0.5, delay: 0.2*Double(indexPath.row), animations: {
+            cell.alpha = 1
+        })
     }
 }

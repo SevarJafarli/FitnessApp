@@ -15,9 +15,6 @@ final class HeaderView: UIView {
         return imgView
     }()
     
-
-
-
     private var imageViewHeight = NSLayoutConstraint()
      var imageViewBottom = NSLayoutConstraint()
     private var containerView = UIView()

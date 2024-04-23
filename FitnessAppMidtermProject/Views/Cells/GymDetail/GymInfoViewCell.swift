@@ -35,7 +35,6 @@ final class GymInfoViewCell: UITableViewCell {
         contentView.addSubview(infoLabel)
     }
     
-    
     private func addConstraints() {
         NSLayoutConstraint.activate([
             infoLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),

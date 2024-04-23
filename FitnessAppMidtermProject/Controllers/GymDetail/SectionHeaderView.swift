@@ -20,6 +20,7 @@ final internal class SectionHeaderView: UIView {
     
     //MARK: Init
     init(title: String) {
+      
         self.title = title
         super.init(frame: .zero)
         titleLabel.text = title

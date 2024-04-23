@@ -9,21 +9,11 @@ import UIKit
 
 class GymItemTableViewCell: UITableViewCell {
     
-    
-    
-    private let gradientView: GradientView = {
-        let view = GradientView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    
     private let itemView: GymItemView = {
         let view = GymItemView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
- 
     
     
     //MARK: İnit
@@ -51,13 +41,6 @@ class GymItemTableViewCell: UITableViewCell {
             itemView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             itemView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             itemView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-            
-//            
-//            gradientView.leadingAnchor.constraint(equalTo: imgView.leadingAnchor),
-//            gradientView.trailingAnchor.constraint(equalTo: imgView.trailingAnchor),
-//            gradientView.bottomAnchor.constraint(equalTo: imgView.bottomAnchor),
-//            gradientView.heightAnchor.constraint(equalToConstant: 120),
-//
         ])
         
     }
@@ -69,17 +52,11 @@ class GymItemTableViewCell: UITableViewCell {
 }
 
 
-class GradientView: UIView {
-    override class var layerClass: AnyClass {
-        return CAGradientLayer.self
-    }
+//MARK: - Constants
+
+extension GymItemTableViewCell {
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        if let gradientLayer = layer as? CAGradientLayer {
-            gradientLayer.colors = [UIColor.red.cgColor, UIColor.blue.cgColor] // Set your desired gradient colors
-            gradientLayer.locations = [0.0, 1.0] // Start at the top
-            gradientLayer.frame = bounds
-        }
+    struct Constants {
+        static let cellHeight = 240.0
     }
 }

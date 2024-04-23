@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CategoriesViewCellDelegate: AnyObject {
+    func onCellSelected(model: GymServiceModel)
+}
+
 class CategoriesViewCell: UITableViewCell {
     
     var services: [GymServiceModel] = []{
@@ -15,10 +19,13 @@ class CategoriesViewCell: UITableViewCell {
         }
     }
     
+    weak var delegate: CategoriesViewCellDelegate?
+    
+    
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
-        layout.itemSize = .init(width: 72, height: 128)
+        layout.itemSize = .init(width: 72, height: 116)
         layout.minimumLineSpacing = 16
         
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -29,6 +36,7 @@ class CategoriesViewCell: UITableViewCell {
         
         cv.register(CategoryItemCell.self, forCellWithReuseIdentifier: CategoryItemCell.reuseIdentifier)
         cv.dataSource = self
+        cv.delegate = self
         return cv
     }()
     
@@ -59,8 +67,7 @@ class CategoriesViewCell: UITableViewCell {
             collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
-            collectionView.heightAnchor.constraint(equalToConstant: 128 + 32)
-            
+            collectionView.heightAnchor.constraint(equalToConstant: 116 + 32)
         ])
     }
 
@@ -79,6 +86,13 @@ extension CategoriesViewCell: UICollectionViewDataSource {
         cell.configure(with: service)
         return cell
     }
-    
-    
+}
+
+
+extension CategoriesViewCell: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let service = services[indexPath.row]
+        delegate?.onCellSelected(model: service)
+    }
 }

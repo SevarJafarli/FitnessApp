@@ -9,53 +9,72 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    private let mainView: HomeView = {
-        let view = HomeView()
-        return view
+    private lazy var tableView: UITableView = {
+        let tv = UITableView(frame: .zero, style: .grouped)
+        tv.separatorStyle = .none
+        tv.translatesAutoresizingMaskIntoConstraints = false
+        tv.backgroundColor = .clear
+        tv.showsVerticalScrollIndicator = false
+        
+        tv.register(CategoriesViewCell.self, forCellReuseIdentifier: CategoriesViewCell.reuseIdentifier)
+        tv.register(NewPartnersViewCell.self, forCellReuseIdentifier: NewPartnersViewCell.reuseIdentifier)
+        tv.register(GymItemTableViewCell.self, forCellReuseIdentifier: GymItemTableViewCell.reuseIdentifier)
+        tv.dataSource = self
+        tv.delegate = self
+        return tv
     }()
     
-    private var services = [GymServiceModel]()
-    private var newPartnerGyms = [GymModel]()
-    private var nearbyGyms = [GymModel]()
-    
-    override func loadView() {
-        super.loadView()
-        
-        self.view = mainView
+    private var services: [GymServiceModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
     }
-    fileprivate func fetchData() {
-        if let res = HomeDataManager.shared.loadData() {
-            services = res.services
-            newPartnerGyms = res.newPartners
-            nearbyGyms = res.nearby
-            
-            mainView.tableView.reloadData()
+    private var newPartnerGyms: [GymModel] = [] {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    private var nearbyGyms: [GymModel] = [] {
+        didSet {
+            tableView.reloadData()
         }
     }
     
+    
+    private func fetchServices() {
+        services = NetworkManager.shared.fetchServices()
+    }
+    
+    fileprivate func fetchGyms() {
+        newPartnerGyms = NetworkManager.shared.fetchNewPartnerGyms()
+        nearbyGyms = NetworkManager.shared.fetchNearbyGyms()
+    }
+    
+    private func setupUI() {
+        view.backgroundColor = .appBackground
+    }
+    
+    private func addSubviews() {
+        view.addSubview(tableView)
+    }
+    
+    private func addConstraints() {
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+        ])
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationBar()
-        mainView.tableView.dataSource = self
-        mainView.tableView.delegate = self
-        
-        fetchData()
-    }
-    
-    
-    private func setupNavigationBar() {
-        title = "Home"
-        navigationController?.navigationBar.prefersLargeTitles = true
-       
-        let searchBtn = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .done, target: self, action: nil)
-
-        searchBtn.tintColor = .label
-       
-        self.navigationItem.rightBarButtonItem = searchBtn
-    }
-    
-    @objc private func onSavedBtnTapped() {
-        
+        setupUI()
+        addSubviews()
+        addConstraints()
+        fetchServices()
+        fetchGyms()
     }
 }
 
@@ -68,7 +87,7 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       
+        
         let section = HomeViewSections.allCases[section]
         
         switch section {
@@ -86,10 +105,11 @@ extension HomeViewController: UITableViewDataSource {
             
         case .categories:
             let cell = tableView.dequeueReusableCell(withIdentifier: CategoriesViewCell.reuseIdentifier, for: indexPath) as! CategoriesViewCell
-           
+            
             cell.services = services
+            cell.delegate = self
             return cell
-        
+            
         case .newPartners:
             let cell = tableView.dequeueReusableCell(withIdentifier: NewPartnersViewCell.reuseIdentifier, for: indexPath) as! NewPartnersViewCell
             cell.collectionView.dataSource = self
@@ -117,7 +137,7 @@ extension HomeViewController: UITableViewDelegate {
         switch section {
             
         case .nearby:
-            return 240
+            return GymItemTableViewCell.Constants.cellHeight
             
         default:
             return UITableView.automaticDimension
@@ -128,10 +148,9 @@ extension HomeViewController: UITableViewDelegate {
         let section = HomeViewSections.allCases[section]
         
         switch section {
-        case .nearby:
-            return HomeSectionHeaderView(title: "Nearby")
-        case .newPartners:
-            return HomeSectionHeaderView(title: "New Partners")
+        case .nearby, .newPartners:
+            return HomeSectionHeaderView(title: section.sectionTitle!)
+            
         default:
             return nil
         }
@@ -174,9 +193,19 @@ extension HomeViewController: UICollectionViewDataSource {
 
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         let vc = GymDetailViewController()
         let model = newPartnerGyms[indexPath.row]
         vc.model = model
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+
+extension HomeViewController: CategoriesViewCellDelegate {
+    func onCellSelected(model: GymServiceModel) {
+        let vc = ServiceGymsViewController()
+        vc.serviceModel = model
         navigationController?.pushViewController(vc, animated: true)
     }
 }

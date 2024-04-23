@@ -54,11 +54,10 @@ class GymContactInfoViewCell: UITableViewCell {
     
     private func addConstraints() {
         NSLayoutConstraint.activate([
-            contentStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
+            contentStackView.topAnchor.constraint(equalTo: contentView.topAnchor),
             contentStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             contentStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             contentStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-            
             
             leftImageView.widthAnchor.constraint(equalToConstant: 24),
             leftImageView.heightAnchor.constraint(equalToConstant: 24)

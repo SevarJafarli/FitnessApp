@@ -18,7 +18,7 @@ class GymItemView: UIView {
         imgView.image = .fitness
         imgView.contentMode = .scaleToFill
         imgView.translatesAutoresizingMaskIntoConstraints = false
-  
+        imgView.backgroundColor = .gray
         return imgView
     }()
     
