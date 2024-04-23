@@ -21,7 +21,6 @@ class SettingsInfoView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupUI()
         addSubviews()
         addConstraints()
     }
@@ -29,11 +28,6 @@ class SettingsInfoView: UIView {
     required init?(coder: NSCoder) {
         fatalError()
     }
-    
-    private func setupUI() {
-        backgroundColor = .appBackground
-    }
-    
     
     private func addSubviews() {
         addSubview(descriptionLabel)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: BaseViewController {
     
     private lazy var tableView: UITableView = {
         let tv = UITableView(frame: .zero, style: .grouped)
@@ -20,9 +20,6 @@ class ProfileViewController: UIViewController {
         return tv
     }()
     
-    private func setupUI() {
-        view.backgroundColor = .appBackground
-    }
     
     private func addSubviews() {
         view.addSubview(tableView)
@@ -41,7 +38,6 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Profile"
-        setupUI()
         addSubviews()
         addConstraints()
     }

@@ -27,6 +27,7 @@ class GymGeneralInfoViewCell: UITableViewCell {
     
     private let rateView: GymStarRateView = {
         let view = GymStarRateView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     

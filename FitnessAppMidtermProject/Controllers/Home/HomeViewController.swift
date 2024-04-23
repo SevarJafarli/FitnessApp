@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
     private lazy var tableView: UITableView = {
         let tv = UITableView(frame: .zero, style: .grouped)
@@ -50,10 +50,6 @@ class HomeViewController: UIViewController {
         nearbyGyms = NetworkManager.shared.fetchNearbyGyms()
     }
     
-    private func setupUI() {
-        view.backgroundColor = .appBackground
-    }
-    
     private func addSubviews() {
         view.addSubview(tableView)
     }
@@ -70,7 +66,6 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
         addSubviews()
         addConstraints()
         fetchServices()

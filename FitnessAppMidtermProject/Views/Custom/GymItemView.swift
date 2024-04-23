@@ -33,6 +33,7 @@ class GymItemView: UIView {
     
     private let rateView: GymStarRateView = {
         let view = GymStarRateView()
+        view.translatesAutoresizingMaskIntoConstraints = false
         view.setRate(4.5)
         return view
     }()

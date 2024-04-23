@@ -48,7 +48,6 @@ class GymStarRateView: UIView {
     }
     
     private func setupView() {
-        self.translatesAutoresizingMaskIntoConstraints = false
         self.layer.cornerRadius = 8
         self.backgroundColor = .systemGray2
     }

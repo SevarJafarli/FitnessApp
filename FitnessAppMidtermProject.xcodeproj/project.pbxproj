@@ -10,7 +10,6 @@
 		E70FCEAF2BC7DE600014950B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEAE2BC7DE600014950B /* AppDelegate.swift */; };
 		E70FCEB12BC7DE600014950B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEB02BC7DE600014950B /* SceneDelegate.swift */; };
 		E70FCEB62BC7DE600014950B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70FCEB42BC7DE600014950B /* Main.storyboard */; };
-		E70FCEB92BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEB72BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld */; };
 		E70FCEBB2BC7DE610014950B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E70FCEBA2BC7DE610014950B /* Assets.xcassets */; };
 		E70FCEBE2BC7DE610014950B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E70FCEBC2BC7DE610014950B /* LaunchScreen.storyboard */; };
 		E70FCEC92BC7E00B0014950B /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEC82BC7E00B0014950B /* TabBarViewController.swift */; };
@@ -33,6 +32,20 @@
 		E70FCF042BCBC9090014950B /* HomeSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCF032BCBC9090014950B /* HomeSectionHeaderView.swift */; };
 		E70FCF072BCBCEB00014950B /* GymDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70FCF062BCBCEB00014950B /* GymDetailViewController.swift */; };
 		E7B34BB12BD8138900EBEC36 /* AppArrowBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BB02BD8138900EBEC36 /* AppArrowBackButton.swift */; };
+		E7B34BB62BD81BAC00EBEC36 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BB52BD81BAC00EBEC36 /* LoginViewController.swift */; };
+		E7B34BB82BD81C4300EBEC36 /* AppPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BB72BD81C4300EBEC36 /* AppPrimaryButton.swift */; };
+		E7B34BBB2BD81CA600EBEC36 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BBA2BD81CA600EBEC36 /* AppTextField.swift */; };
+		E7B34BBD2BD81FBD00EBEC36 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BBC2BD81FBD00EBEC36 /* SignupViewController.swift */; };
+		E7B34BC12BD81FF800EBEC36 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BC02BD81FF800EBEC36 /* BaseViewController.swift */; };
+		E7B34BC82BD8262800EBEC36 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BC72BD8262800EBEC36 /* UITextField+Ext.swift */; };
+		E7B34BCB2BD8265100EBEC36 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BCA2BD8265100EBEC36 /* Validator.swift */; };
+		E7B34BCD2BD826C000EBEC36 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BCC2BD826C000EBEC36 /* AuthManager.swift */; };
+		E7B34BD32BD8283200EBEC36 /* Alert+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BD22BD8283200EBEC36 /* Alert+Ext.swift */; };
+		E7B34BDA2BD82BC000EBEC36 /* UserModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BD82BD82BC000EBEC36 /* UserModel+CoreDataClass.swift */; };
+		E7B34BDB2BD82BC000EBEC36 /* UserModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BD92BD82BC000EBEC36 /* UserModel+CoreDataProperties.swift */; };
+		E7B34BDC2BD82BFF00EBEC36 /* FitnessAppMidtermProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E70FCEB72BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld */; };
+		E7B34BDE2BD82CA800EBEC36 /* UserItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BDD2BD82CA800EBEC36 /* UserItemModel.swift */; };
+		E7B34BE02BD830E900EBEC36 /* Navigation+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B34BDF2BD830E900EBEC36 /* Navigation+Ext.swift */; };
 		E7B35F192BCE7AE300EBE0D5 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F182BCE7AE300EBE0D5 /* HeaderView.swift */; };
 		E7B35F1B2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F1A2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift */; };
 		E7B35F1D2BCE870600EBE0D5 /* GymDetailViewSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F1C2BCE870600EBE0D5 /* GymDetailViewSections.swift */; };
@@ -40,8 +53,6 @@
 		E7B35F262BCE88D700EBE0D5 /* GymInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F252BCE88D700EBE0D5 /* GymInfoViewCell.swift */; };
 		E7B35F282BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F272BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift */; };
 		E7B35F2A2BCE8F3C00EBE0D5 /* HomeVC+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F292BCE8F3C00EBE0D5 /* HomeVC+Ext.swift */; };
-		E7B35F2E2BCEB81D00EBE0D5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F2D2BCEB81D00EBE0D5 /* FavoritesViewController.swift */; };
-		E7B35F302BCEB89400EBE0D5 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F2F2BCEB89400EBE0D5 /* FavoritesView.swift */; };
 		E7B35F352BCEC21500EBE0D5 /* GymModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F342BCEC21500EBE0D5 /* GymModelResponse.swift */; };
 		E7B35F382BCEC29E00EBE0D5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F372BCEC29E00EBE0D5 /* NetworkManager.swift */; };
 		E7B35F3A2BCEC8C900EBE0D5 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B35F392BCEC8C900EBE0D5 /* Color+Ext.swift */; };
@@ -90,6 +101,19 @@
 		E70FCF032BCBC9090014950B /* HomeSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionHeaderView.swift; sourceTree = "<group>"; };
 		E70FCF062BCBCEB00014950B /* GymDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailViewController.swift; sourceTree = "<group>"; };
 		E7B34BB02BD8138900EBEC36 /* AppArrowBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppArrowBackButton.swift; sourceTree = "<group>"; };
+		E7B34BB52BD81BAC00EBEC36 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E7B34BB72BD81C4300EBEC36 /* AppPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrimaryButton.swift; sourceTree = "<group>"; };
+		E7B34BBA2BD81CA600EBEC36 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
+		E7B34BBC2BD81FBD00EBEC36 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		E7B34BC02BD81FF800EBEC36 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7B34BC72BD8262800EBEC36 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
+		E7B34BCA2BD8265100EBEC36 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		E7B34BCC2BD826C000EBEC36 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		E7B34BD22BD8283200EBEC36 /* Alert+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+Ext.swift"; sourceTree = "<group>"; };
+		E7B34BD82BD82BC000EBEC36 /* UserModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E7B34BD92BD82BC000EBEC36 /* UserModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E7B34BDD2BD82CA800EBEC36 /* UserItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemModel.swift; sourceTree = "<group>"; };
+		E7B34BDF2BD830E900EBEC36 /* Navigation+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+Ext.swift"; sourceTree = "<group>"; };
 		E7B35F182BCE7AE300EBE0D5 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E7B35F1A2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GymDetailVC+Ext.swift"; sourceTree = "<group>"; };
 		E7B35F1C2BCE870600EBE0D5 /* GymDetailViewSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymDetailViewSections.swift; sourceTree = "<group>"; };
@@ -97,8 +121,6 @@
 		E7B35F252BCE88D700EBE0D5 /* GymInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymInfoViewCell.swift; sourceTree = "<group>"; };
 		E7B35F272BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymContactInfoViewCell.swift; sourceTree = "<group>"; };
 		E7B35F292BCE8F3C00EBE0D5 /* HomeVC+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC+Ext.swift"; sourceTree = "<group>"; };
-		E7B35F2D2BCEB81D00EBE0D5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		E7B35F2F2BCEB89400EBE0D5 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E7B35F342BCEC21500EBE0D5 /* GymModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymModelResponse.swift; sourceTree = "<group>"; };
 		E7B35F372BCEC29E00EBE0D5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E7B35F392BCEC8C900EBE0D5 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
@@ -148,6 +170,8 @@
 		E70FCEAD2BC7DE600014950B /* FitnessAppMidtermProject */ = {
 			isa = PBXGroup;
 			children = (
+				E7B34BC62BD824B100EBEC36 /* UserModel */,
+				E7B34BC92BD8264500EBEC36 /* Helpers */,
 				E7B35F362BCEC28C00EBE0D5 /* Managers */,
 				E7B35F312BCEBBF900EBE0D5 /* Data */,
 				E70FCED52BC7EA340014950B /* Extensions */,
@@ -168,8 +192,9 @@
 		E70FCEC52BC7DFEF0014950B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7B34BB42BD81BA000EBEC36 /* Register */,
+				E7B34BB32BD81B9B00EBEC36 /* Login */,
 				E7B35F4C2BD27F7A00EBE0D5 /* Search */,
-				E7B35F2C2BCEB80B00EBE0D5 /* Favorites */,
 				E70FCF052BCBCE9F0014950B /* GymDetail */,
 				E70FCEDE2BC7F2EF0014950B /* Profile */,
 				E70FCECF2BC7E6CF0014950B /* TabBar */,
@@ -184,6 +209,7 @@
 		E70FCEC62BC7DFF50014950B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E7B34BB92BD81C9700EBEC36 /* TextFields */,
 				E7B34BAF2BD8137E00EBEC36 /* Button */,
 				E70FCEFC2BCBBB3E0014950B /* Custom */,
 				E70FCED22BC7EA1E0014950B /* Cells */,
@@ -197,9 +223,8 @@
 				E70FCED02BC7E8810014950B /* HomeViewSections.swift */,
 				E70FCEE52BC7F45E0014950B /* SettingsViewModel.swift */,
 				E7B35F1C2BCE870600EBE0D5 /* GymDetailViewSections.swift */,
-				E7B35F342BCEC21500EBE0D5 /* GymModelResponse.swift */,
 				E7B35F412BCFA7D300EBE0D5 /* Responses */,
-				E7B35F532BD2847600EBE0D5 /* AllGymsResponse.swift */,
+				E7B34BDD2BD82CA800EBEC36 /* UserItemModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -239,6 +264,9 @@
 				E70FCED62BC7EA3F0014950B /* Cell+Ext.swift */,
 				E70FCEFA2BCBB8400014950B /* ViewController+Ext.swift */,
 				E7B35F392BCEC8C900EBE0D5 /* Color+Ext.swift */,
+				E7B34BC72BD8262800EBEC36 /* UITextField+Ext.swift */,
+				E7B34BD22BD8283200EBEC36 /* Alert+Ext.swift */,
+				E7B34BDF2BD830E900EBEC36 /* Navigation+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -286,8 +314,50 @@
 			isa = PBXGroup;
 			children = (
 				E7B34BB02BD8138900EBEC36 /* AppArrowBackButton.swift */,
+				E7B34BB72BD81C4300EBEC36 /* AppPrimaryButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		E7B34BB32BD81B9B00EBEC36 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E7B34BB52BD81BAC00EBEC36 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E7B34BB42BD81BA000EBEC36 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E7B34BBC2BD81FBD00EBEC36 /* SignupViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E7B34BB92BD81C9700EBEC36 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				E7B34BBA2BD81CA600EBEC36 /* AppTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		E7B34BC62BD824B100EBEC36 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7B34BD82BD82BC000EBEC36 /* UserModel+CoreDataClass.swift */,
+				E7B34BD92BD82BC000EBEC36 /* UserModel+CoreDataProperties.swift */,
+			);
+			path = UserModel;
+			sourceTree = "<group>";
+		};
+		E7B34BC92BD8264500EBEC36 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7B34BCA2BD8265100EBEC36 /* Validator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		E7B35F202BCE889100EBE0D5 /* Home */ = {
@@ -329,15 +399,6 @@
 			path = GymDetail;
 			sourceTree = "<group>";
 		};
-		E7B35F2C2BCEB80B00EBE0D5 /* Favorites */ = {
-			isa = PBXGroup;
-			children = (
-				E7B35F2D2BCEB81D00EBE0D5 /* FavoritesViewController.swift */,
-				E7B35F2F2BCEB89400EBE0D5 /* FavoritesView.swift */,
-			);
-			path = Favorites;
-			sourceTree = "<group>";
-		};
 		E7B35F312BCEBBF900EBE0D5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +413,7 @@
 			children = (
 				E7B35F372BCEC29E00EBE0D5 /* NetworkManager.swift */,
 				E7B35F442BCFAA0200EBE0D5 /* JSONLoader.swift */,
+				E7B34BCC2BD826C000EBEC36 /* AuthManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -359,6 +421,8 @@
 		E7B35F412BCFA7D300EBE0D5 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
+				E7B35F342BCEC21500EBE0D5 /* GymModelResponse.swift */,
+				E7B35F532BD2847600EBE0D5 /* AllGymsResponse.swift */,
 				E7B35F422BCFA7E200EBE0D5 /* GymServicesResponse.swift */,
 			);
 			path = Responses;
@@ -377,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				E7B35F592BD2B36400EBE0D5 /* ItemsViewController.swift */,
+				E7B34BC02BD81FF800EBEC36 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -466,29 +531,40 @@
 				E70FCEE82BC7F9080014950B /* SettingsInfoViewController.swift in Sources */,
 				E70FCEDD2BC7EC310014950B /* CategoryItemCell.swift in Sources */,
 				E7B35F402BCFA13E00EBE0D5 /* GymGeneralInfoViewCell.swift in Sources */,
+				E7B34BDA2BD82BC000EBEC36 /* UserModel+CoreDataClass.swift in Sources */,
+				E7B34BDC2BD82BFF00EBEC36 /* FitnessAppMidtermProject.xcdatamodeld in Sources */,
 				E7B35F492BCFB2F800EBE0D5 /* ImageCircleView.swift in Sources */,
 				E7B35F4B2BCFB6B800EBE0D5 /* GymSocialAccountsViewCell.swift in Sources */,
+				E7B34BD32BD8283200EBEC36 /* Alert+Ext.swift in Sources */,
 				E70FCED42BC7EA2F0014950B /* CategoriesViewCell.swift in Sources */,
 				E7B35F262BCE88D700EBE0D5 /* GymInfoViewCell.swift in Sources */,
 				E7B35F1B2BCE860B00EBE0D5 /* GymDetailVC+Ext.swift in Sources */,
 				E7B35F352BCEC21500EBE0D5 /* GymModelResponse.swift in Sources */,
 				E70FCEE02BC7F2FB0014950B /* ProfileViewController.swift in Sources */,
 				E7B35F472BCFB2C100EBE0D5 /* SocialAccountViewCell.swift in Sources */,
+				E7B34BB62BD81BAC00EBEC36 /* LoginViewController.swift in Sources */,
+				E7B34BC12BD81FF800EBEC36 /* BaseViewController.swift in Sources */,
 				E7B35F382BCEC29E00EBE0D5 /* NetworkManager.swift in Sources */,
 				E7B35F2A2BCE8F3C00EBE0D5 /* HomeVC+Ext.swift in Sources */,
+				E7B34BDE2BD82CA800EBEC36 /* UserItemModel.swift in Sources */,
 				E70FCEAF2BC7DE600014950B /* AppDelegate.swift in Sources */,
+				E7B34BDB2BD82BC000EBEC36 /* UserModel+CoreDataProperties.swift in Sources */,
 				E70FCEB12BC7DE600014950B /* SceneDelegate.swift in Sources */,
 				E70FCEE62BC7F45E0014950B /* SettingsViewModel.swift in Sources */,
 				E70FCF042BCBC9090014950B /* HomeSectionHeaderView.swift in Sources */,
+				E7B34BBB2BD81CA600EBEC36 /* AppTextField.swift in Sources */,
 				E70FCF022BCBC6240014950B /* GymItemCollectionViewCell.swift in Sources */,
 				E70FCF002BCBC4FC0014950B /* GymItemView.swift in Sources */,
+				E7B34BB82BD81C4300EBEC36 /* AppPrimaryButton.swift in Sources */,
 				E7B35F452BCFAA0200EBE0D5 /* JSONLoader.swift in Sources */,
 				E7B35F562BD28C4C00EBE0D5 /* NoResultViewCell.swift in Sources */,
+				E7B34BE02BD830E900EBEC36 /* Navigation+Ext.swift in Sources */,
 				E7B35F1F2BCE884400EBE0D5 /* SectionHeaderView.swift in Sources */,
 				E7B35F432BCFA7E200EBE0D5 /* GymServicesResponse.swift in Sources */,
 				E70FCED92BC7EA620014950B /* NewPartnersViewCell.swift in Sources */,
 				E70FCED72BC7EA3F0014950B /* Cell+Ext.swift in Sources */,
 				E7B35F1D2BCE870600EBE0D5 /* GymDetailViewSections.swift in Sources */,
+				E7B34BCB2BD8265100EBEC36 /* Validator.swift in Sources */,
 				E70FCF072BCBCEB00014950B /* GymDetailViewController.swift in Sources */,
 				E70FCEC92BC7E00B0014950B /* TabBarViewController.swift in Sources */,
 				E70FCEFB2BCBB8400014950B /* ViewController+Ext.swift in Sources */,
@@ -497,15 +573,15 @@
 				E7B35F502BD2815900EBE0D5 /* SearchResultsViewController.swift in Sources */,
 				E7B35F4E2BD27F8700EBE0D5 /* SearchViewController.swift in Sources */,
 				E70FCEEB2BC7F9500014950B /* SettingsInfoView.swift in Sources */,
-				E70FCEB92BC7DE600014950B /* FitnessAppMidtermProject.xcdatamodeld in Sources */,
 				E7B34BB12BD8138900EBEC36 /* AppArrowBackButton.swift in Sources */,
 				E7B35F3A2BCEC8C900EBE0D5 /* Color+Ext.swift in Sources */,
-				E7B35F2E2BCEB81D00EBE0D5 /* FavoritesViewController.swift in Sources */,
 				E7B35F542BD2847600EBE0D5 /* AllGymsResponse.swift in Sources */,
+				E7B34BC82BD8262800EBEC36 /* UITextField+Ext.swift in Sources */,
 				E7B35F582BD295CF00EBE0D5 /* ServiceGymsViewController.swift in Sources */,
 				E7B35F282BCE8B1600EBE0D5 /* GymContactInfoViewCell.swift in Sources */,
+				E7B34BBD2BD81FBD00EBEC36 /* SignupViewController.swift in Sources */,
 				E7B35F5A2BD2B36400EBE0D5 /* ItemsViewController.swift in Sources */,
-				E7B35F302BCEB89400EBE0D5 /* FavoritesView.swift in Sources */,
+				E7B34BCD2BD826C000EBEC36 /* AuthManager.swift in Sources */,
 				E70FCEFE2BCBBB480014950B /* GymStarRateView.swift in Sources */,
 				E70FCECB2BC7E1A40014950B /* HomeViewController.swift in Sources */,
 				E7B35F192BCE7AE300EBE0D5 /* HeaderView.swift in Sources */,

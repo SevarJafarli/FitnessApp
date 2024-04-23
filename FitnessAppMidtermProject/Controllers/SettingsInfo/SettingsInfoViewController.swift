@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsInfoViewController: UIViewController {
+class SettingsInfoViewController: BaseViewController {
 
     var model: SettingsModel?
     

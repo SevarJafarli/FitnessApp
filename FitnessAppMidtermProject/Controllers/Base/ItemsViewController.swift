@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ItemsViewController: UIViewController {
+class ItemsViewController: BaseViewController {
 
     let tableView: UITableView = {
         let tv = UITableView(frame: .zero, style: .plain)
@@ -23,16 +23,10 @@ class ItemsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupUI()
         addSubviews()
         addConstraints()
     }
-    
 
-    private func setupUI() {
-        self.view.backgroundColor = .appBackground
-    }
     
     private func addSubviews() {
         view.addSubview(tableView)
